@@ -14,18 +14,40 @@ $response->data = null;
 
 function login() {
     global $response;
-    $dao = new Usuario();
+    try {
+        
+        $dao = new Usuario();
 
-    $retorno = $dao->getLogin(
-        array(
-            'tx_usuario' => $_REQUEST['login'],
-            'tx_senha' => $_REQUEST['senha']
-        ),
-        array('tx_usuario', 'tx_senha')
-    );
+        $retorno = $dao->getLogin(
+            array(
+                'tx_usuario' => $_REQUEST['login'],
+                'tx_senha' => $_REQUEST['senha']
+            ),
+            array('tx_usuario', 'tx_senha', 'id_empresa')
+        );
 
-    $response->data = current($retorno);
+        $usuarioValido = false;
+        if ($retorno) {
+            $usuarioValido = true;
+        }
 
+        if (is_array($retorno)) {
+            $retorno = current($retorno);
+        }
+
+        if (!empty($retorno->id_empresa) && $retorno->id_empresa == 1) {
+            header('Location: /encorpora.php');
+            exit;
+        } elseif (!empty($retorno->id_empresa) && $retorno->id_empresa != 1) {
+            header('Location: /listagem.php');
+            exit;
+        }
+
+        $response->data = $retorno;
+    } catch (Exception $ex) {
+        $response->msg = $ex->getMessage();
+        $response->erro = true;
+    }
 }
 
 $funcs = array(

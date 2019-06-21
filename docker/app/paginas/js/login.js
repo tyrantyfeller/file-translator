@@ -4,6 +4,9 @@ $('#btn-login').on('click', function() {
         data: $('#formLogin').serialize(),
         success: function( result ) {
             retorno = JSON.parse(result);
+            if (!retorno.data) {
+                alert('erro ao logar');
+            }
         }
     });
 });
