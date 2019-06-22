@@ -7,8 +7,8 @@ class conexaoBanco {
     private $pass = '123.456';
 
     private $conexao;
-    private $stSQL;
-    private $stTable;
+    public $stSQL;
+    public $stTable;
 
     public function __construct($table) {
         $this->conexao = $this->conectar();
@@ -27,6 +27,7 @@ class conexaoBanco {
             $this->stSQL = $sql;
         }
 
+        #return $this->stSQL;
         $statement = $this->conexao->prepare($this->stSQL);
         $statement->execute();
         $posts = $statement->fetchAll(PDO::FETCH_OBJ);
@@ -45,7 +46,7 @@ class conexaoBanco {
         $this->stSQL .= " FROM {$this->stTable}";
 
         if ($where) {
-            $this->stSQL .= ' WHERE '. $this->getWhere($where);
+            $this->stSQL .= ' WHERE '. $where;
         }
 
         return $this->executeQuery();
@@ -53,9 +54,9 @@ class conexaoBanco {
 
     public function buildUpdate($where, $setValues = array()) {
         $this->stSQL = "UPDATE {$this->stTable} SET ";
-        $this->stSQL .= $this->getWhere($setValues);
+        $this->stSQL .= $setValues;
         $this->stSQL .= " WHERE ";
-        $this->stSQL .= $this->getWhere($where);
+        $this->stSQL .= $where;
 
         return $this->executeQuery();
     }

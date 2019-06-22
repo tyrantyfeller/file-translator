@@ -1,10 +1,8 @@
 <?php
-require_once '../../externo/DAO/Usuario.php';
+session_start();
 
-if (empty($_SESSION['ses_loginser'])) {
-    //header('Location: /index.php');
-    //exit;
-}
+require_once '../../externo/DAO/Usuario.php';
+require_once '../../externo/publicFunctions.php';
 
 $response = new stdClass();
 $response->erro = false;
@@ -12,6 +10,12 @@ $response->status = '';
 $response->msg = '';
 $response->data = null;
 
+function setSessionUser($dados) {
+    $_SESSION['id_user'] = $dados->id_usuario;
+    $_SESSION['nm_user'] = $dados->nm_usuario;
+    $_SESSION['tp_user'] = $dados->tp_usuario;
+    $_SESSION['id_empresa_user'] = $dados->id_empresa;
+}
 function login() {
     global $response;
     try {
@@ -19,11 +23,16 @@ function login() {
         $dao = new Usuario();
 
         $retorno = $dao->getLogin(
-            array(
-                'tx_usuario' => $_REQUEST['login'],
-                'tx_senha' => $_REQUEST['senha']
+            getWhereByArray(
+                array(
+                    'tx_usuario' => $_REQUEST['login'],
+                    'tx_senha' => $_REQUEST['senha']
+                )
             ),
-            array('tx_usuario', 'tx_senha', 'id_empresa')
+            array(
+                'tx_usuario', 'tx_senha', 'id_empresa',
+                'id_usuario', 'nm_usuario', 'tp_usuario'
+            )
         );
 
         $usuarioValido = false;
@@ -34,6 +43,8 @@ function login() {
         if (is_array($retorno)) {
             $retorno = current($retorno);
         }
+
+        setSessionUser($retorno);
 
         if (!empty($retorno->id_empresa) && $retorno->id_empresa == 1) {
             header('Location: /encorpora.php');
