@@ -13,6 +13,7 @@
                     <input id="lb-acao" type="hidden" name="acao" value="login">
                     <input id="lb-user" type="text" id="login" class="fadeIn second" name="login" placeholder="login">
                     <input id="lb-password" type="text" id="password" class="fadeIn third" name="senha" placeholder="password">
+                    <div style="display: none" class="alert alert-danger" role="alert"></div>
                     <input id="btn-login" type="button" class="fadeIn fourth" value="Log In">
                 </form>
             </div>

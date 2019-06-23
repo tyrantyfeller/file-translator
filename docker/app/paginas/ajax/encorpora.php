@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 require_once '../../externo/DAO/Empresa.php';
 require_once '../../externo/publicFunctions.php';
 

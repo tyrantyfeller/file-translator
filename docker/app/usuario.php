@@ -10,13 +10,19 @@
             <ul class="nav">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
+                        <a class="nav-link" href="encorpora.php">Encorporar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.php">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="configuracao.php">Configuração</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="listagem.php">Listagem</a>
+                        <a class="nav-link" href="listagem.php">Listagem</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="usuario.php">Usuário</a>
+                        <a class="nav-link active" href="usuario.php">Usuário</a>
                     </li>
                 </ul>
             </ul>

@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 require_once '../../externo/DAO/Usuario.php';
 require_once '../../externo/publicFunctions.php';
@@ -11,10 +10,14 @@ $response->msg = '';
 $response->data = null;
 
 function setSessionUser($dados) {
+    session_start();
+
     $_SESSION['id_user'] = $dados->id_usuario;
     $_SESSION['nm_user'] = $dados->nm_usuario;
+    $_SESSION['tx_user'] = $dados->tx_usuario;
     $_SESSION['tp_user'] = $dados->tp_usuario;
     $_SESSION['id_empresa_user'] = $dados->id_empresa;
+    $_SESSION['empresa_assumida'] = null;
 }
 function login() {
     global $response;
@@ -47,11 +50,9 @@ function login() {
         setSessionUser($retorno);
 
         if (!empty($retorno->id_empresa) && $retorno->id_empresa == 1) {
-            header('Location: /encorpora.php');
-            exit;
+            $response->href = "http://{$_SERVER['HTTP_HOST']}/encorpora.php";
         } elseif (!empty($retorno->id_empresa) && $retorno->id_empresa != 1) {
-            header('Location: /listagem.php');
-            exit;
+            $response->href = "http://{$_SERVER['HTTP_HOST']}/listagem.php";
         }
 
         $response->data = $retorno;

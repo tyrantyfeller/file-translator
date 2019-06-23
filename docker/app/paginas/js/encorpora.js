@@ -10,5 +10,4 @@ $( document ).ready(function() {
             $("#btn-encorporar-empresa").append(retorno.html);
         }
     });
-    
 });

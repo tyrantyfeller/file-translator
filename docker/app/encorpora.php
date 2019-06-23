@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="externo/assets/bootstrap-4.3.1-dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="paginas/css/encorpora.css"
+        <link rel="stylesheet" href="paginas/css/encorpora.css">
     </head>
     <body>
         <nav class="navbar navbar-dark bg-dark">
@@ -19,19 +19,28 @@
                     <li class="nav-item">
                         <a class="nav-link" href="configuracao.php">Configuração</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listagem.php">Listagem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="usuario.php">Usuário</a>
+                    </li>
                 </ul>
             </ul>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">Sair</button>
+            <button class="navbar-toggler" type="button">Sair</button>
         </nav>
         <div class="container">
+            <br />
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
                     <form id="formEncorpora">
                         <input id="lb-acao" type="hidden" name="acao" value="getEmpresas">
                         <h1 class="display-4">Encorporar empresa</h1>
+                        <br />
                         <select class="form-control col-lg-12 col-sm-12" id="btn-encorporar-empresa">
                             <option>Selecione...</option>
                         </select>
+                        <br />
                         <button type="button" class="btn btn-success col-lg-2 col-sm-2">Encorporar</button>
                     </form>
                 </div>
