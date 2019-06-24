@@ -28,11 +28,37 @@
             </ul>
             <button class="navbar-toggler" type="button">Sair</button>
         </nav>
+        <br />
         <div class="container">
-
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Nome Usuario</label>
+                        <input type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Usuario</label>
+                        <input type="text" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Senha</label>
+                        <input type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6 select-empresa">
+                        <label for="inputEstado">Empresa</label>
+                        <select id="btn-empresa" class="form-control">
+                            <option selected>Selecione...</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success">Cadastrar</button>
+                <button type="button" class="btn btn-primary">Pesquisar</button>
+            </form>
         </div>
         <script src="externo/assets/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
         <script src="externo/assets/JQuery-3.4.1/jquery-3.4.1.min.js"></script>
-        <script src="paginas/js/encorpora.js"></script>
+        <script src="paginas/js/usuario.js"></script>
     </body>
 </html>

@@ -29,8 +29,8 @@
             </ul>
             <button class="navbar-toggler" type="button">Sair</button>
         </nav>
+        <br />
         <div class="container">
-            <br />
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
                     <form id="formEncorpora">
