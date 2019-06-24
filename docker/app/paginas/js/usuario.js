@@ -7,6 +7,9 @@ $( document ).ready(function() {
             if (retorno.erro) {
                 alert('erro ao logar');
             }
+            if (retorno.empresaAssumida) {
+                $('#select-empresa').hide();
+            }
             $("#btn-empresa").append(retorno.html);
         }
     });

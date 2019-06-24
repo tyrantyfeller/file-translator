@@ -28,6 +28,8 @@ function getEmpresas() {
         $dao = new Empresa();
         
         $retorno = $dao->getEmpresas("id_empresa != 1", array('id_empresa', 'nm_empresa'));
+
+        $response->empresaAssumida = $_SESSION['empresa_assumida'];
         $response->html = getOptionsEmpresas($retorno);
     } catch (Exception $ex) {
         $response->msg = $ex->getMessage();
