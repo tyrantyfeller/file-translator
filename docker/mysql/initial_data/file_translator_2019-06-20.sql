@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS `file_translator`.`empresas` (
   `nr_cnpj` VARCHAR(14) NOT NULL,
   `nr_ie` VARCHAR(45) NULL DEFAULT NULL,
   `tp_emp` INT(1) NOT NULL,
+  `in_status` CHAR(1) NOT NULL DEFAULT 'S',
   PRIMARY KEY (`id_empresa`))
 ENGINE = InnoDB DEFAULT CHARSET=utf8;
 
