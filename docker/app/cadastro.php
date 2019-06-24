@@ -33,22 +33,22 @@
             <form>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputEmail4">Nome Empresa</label>
-                        <input type="text" class="form-control" id="inputEmail4">
+                        <label for="lb_nome_empresa">Nome Empresa</label>
+                        <input type="text" class="form-control" id="lb_nome_empresa" name="lb_nome_empresa">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputPassword4">Nome Fantasia</label>
-                        <input type="text" class="form-control" id="inputPassword4">
+                        <label for="lb_nome_fantasia">Nome Fantasia</label>
+                        <input type="text" class="form-control" id="lb_nome_fantasia" name="lb_nome_fantasia">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputEmail4">CNPJ</label>
-                        <input type="text" class="form-control" id="inputEmail4">
+                        <label for="lb_cnpj">CNPJ</label>
+                        <input type="text" class="form-control" id="lb_cnpj" name="lb_cnpj">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputPassword4">Inscrição estadual</label>
-                        <input type="text" class="form-control" id="inputPassword4">
+                        <label for="lb_ie">Inscrição estadual</label>
+                        <input type="text" class="form-control" id="lb_ie" name="lb_ie">
                     </div>
                 </div>
                 <button type="button" class="btn btn-success">Cadastrar</button>
@@ -57,6 +57,6 @@
         </div>
         <script src="externo/assets/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
         <script src="externo/assets/JQuery-3.4.1/jquery-3.4.1.min.js"></script>
-        <script src="paginas/js/encorpora.js"></script>
+        <script src="paginas/js/cadastro.js"></script>
     </body>
 </html>

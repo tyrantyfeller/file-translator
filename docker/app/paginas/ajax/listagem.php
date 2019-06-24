@@ -10,9 +10,12 @@ $response->status = '';
 $response->msg = '';
 $response->data = null;
 
+function getArquivos() {
+	
+}
 
 $funcs = array(
-    ''
+    'getArquivos'
 );
 if (in_array($_REQUEST['acao'], $funcs)) {
     call_user_func($_REQUEST['acao']);

@@ -34,56 +34,56 @@
                 <h5 class="card-title">Empresa Origem</h5>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputEmail4">Identificador</label>
-                        <input type="text" class="form-control" id="inputEmail4">
+                        <label for="lb_identificador_origem">Identificador</label>
+                        <input type="text" class="form-control" id="lb_identificador_origem" name="lb_identificador_origem">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputPassword4">Posição Identificador</label>
-                        <input type="text" class="form-control" id="inputPassword4">
+                        <label for="lb_posicao_identificador_origem">Posição Identificador</label>
+                        <input type="text" class="form-control" id="lb_posicao_identificador_origem" name="lb_posicao_identificador_origem">
                     </div>
                 </div>
                 <h5 class="card-title">Empresa Destino</h5>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputEmail4">Identificador</label>
-                        <input type="text" class="form-control" id="inputEmail4">
+                        <label for="lb_identificador_emp">Identificador</label>
+                        <input type="text" class="form-control" id="lb_identificador_emp" name="lb_identificador_emp">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputPassword4">Posição Identificador</label>
-                        <input type="text" class="form-control" id="inputPassword4">
+                        <label for="lb_posicao_identificador_emp">Posição Identificador</label>
+                        <input type="text" class="form-control" id="lb_posicao_identificador_emp" name="lb_posicao_identificador_emp">
                     </div>
                 </div>
                 <h5 class="card-title">Dados Notas Fiscais</h5>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputEmail4">Identificador</label>
-                        <input type="text" class="form-control" id="inputEmail4">
+                        <label for="lb_identificador_nota">Identificador</label>
+                        <input type="text" class="form-control" id="lb_identificador_nota" name="lb_identificador_nota">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputPassword4">Posição Identificador</label>
-                        <input type="text" class="form-control" id="inputPassword4">
+                        <label for="lb_posicao_identificador_nota">Posição Identificador</label>
+                        <input type="text" class="form-control" id="lb_posicao_identificador_nota" name="lb_posicao_identificador_nota">
                     </div>
                 </div>
                 <h5 class="card-title">Produtos Notas Fiscais</h5>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputEmail4">Identificador</label>
-                        <input type="text" class="form-control" id="inputEmail4">
+                        <label for="lb_identificador_produto">Identificador</label>
+                        <input type="text" class="form-control" id="lb_identificador_produto" name="lb_identificador_produto">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputPassword4">Posição Identificador</label>
-                        <input type="text" class="form-control" id="inputPassword4">
+                        <label for="lb_posicao_identificador_produto">Posição Identificador</label>
+                        <input type="text" class="form-control" id="lb_posicao_identificador_produto" name="lb_posicao_identificador_produto">
                     </div>
                 </div>
                 <h5 class="card-title">Observação</h5>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputEmail4">Identificador</label>
-                        <input type="text" class="form-control" id="inputEmail4">
+                        <label for="lb_identificador_obs">Identificador</label>
+                        <input type="text" class="form-control" id="lb_identificador_obs" name="lb_identificador_obs">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputPassword4">Posição Identificador</label>
-                        <input type="text" class="form-control" id="inputPassword4">
+                        <label for="lb_posicao_identificador_obs">Posição Identificador</label>
+                        <input type="text" class="form-control" id="lb_posicao_identificador_obs" name="lb_posicao_identificador_obs">
                     </div>
                 </div>
                 <button type="button" class="btn btn-success">Salvar</button>
@@ -91,6 +91,6 @@
         </div>
         <script src="externo/assets/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
         <script src="externo/assets/JQuery-3.4.1/jquery-3.4.1.min.js"></script>
-        <script src="paginas/js/encorpora.js"></script>
+        <script src="paginas/js/configuracao.js"></script>
     </body>
 </html>

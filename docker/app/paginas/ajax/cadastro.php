@@ -14,8 +14,12 @@ function getCadastroParametros() {
     
 }
 
+function excluirEmpresa() {
+	
+}
+
 $funcs = array(
-    'getCadastroParametros'
+    'getCadastroParametros', 'excluirEmpresa'
 );
 if (in_array($_REQUEST['acao'], $funcs)) {
     call_user_func($_REQUEST['acao']);

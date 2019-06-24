@@ -10,12 +10,16 @@ $response->status = '';
 $response->msg = '';
 $response->data = null;
 
-function cadastrarConfiguracao() {
+function cadastraUsuario() {
+    
+}
+
+function excluirUsuario() {
 	
 }
 
 $funcs = array(
-    'cadastrarConfiguracao'
+    'cadastraUsuario', 'excluirUsuario'
 );
 if (in_array($_REQUEST['acao'], $funcs)) {
     call_user_func($_REQUEST['acao']);

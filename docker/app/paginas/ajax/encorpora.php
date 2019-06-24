@@ -35,8 +35,12 @@ function getEmpresas() {
     }
 }
 
+function assumirEmpresa() {
+	
+}
+
 $funcs = array(
-    'getEmpresas'
+    'getEmpresas', 'assumirEmpresa'
 );
 if (in_array($_REQUEST['acao'], $funcs)) {
     call_user_func($_REQUEST['acao']);

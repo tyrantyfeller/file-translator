@@ -33,22 +33,22 @@
             <form>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputEmail4">Nome Usuario</label>
-                        <input type="text" class="form-control" id="inputEmail4">
+                        <label for="lb_nm_usuario">Nome Usuario</label>
+                        <input type="text" class="form-control" id="lb_nm_usuario" name="lb_nm_usuario">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputPassword4">Usuario</label>
-                        <input type="text" class="form-control" id="inputPassword4">
+                        <label for="lb_usuario">Usuario</label>
+                        <input type="text" class="form-control" id="lb_usuario" name="lb_usuario">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputEmail4">Senha</label>
-                        <input type="text" class="form-control" id="inputEmail4">
+                        <label for="lb_senha">Senha</label>
+                        <input type="text" class="form-control" id="lb_senha" name="lb_senha">
                     </div>
                     <div class="form-group col-md-6 select-empresa">
-                        <label for="inputEstado">Empresa</label>
-                        <select id="btn-empresa" class="form-control">
+                        <label for="lb_empresa">Empresa</label>
+                        <select id="lb_empresa" class="form-control">
                             <option selected>Selecione...</option>
                         </select>
                     </div>

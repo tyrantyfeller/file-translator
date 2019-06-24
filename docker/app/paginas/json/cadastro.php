@@ -10,12 +10,12 @@ $response->status = '';
 $response->msg = '';
 $response->data = null;
 
-function cadastrarConfiguracao() {
-	
+function getEmpresas() {
+    
 }
 
 $funcs = array(
-    'cadastrarConfiguracao'
+    'getEmpresas'
 );
 if (in_array($_REQUEST['acao'], $funcs)) {
     call_user_func($_REQUEST['acao']);

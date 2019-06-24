@@ -37,7 +37,7 @@
                         <input id="lb-acao" type="hidden" name="acao" value="getEmpresas">
                         <h1 class="display-4">Encorporar empresa</h1>
                         <br />
-                        <select class="form-control col-lg-12 col-sm-12" id="btn-encorporar-empresa">
+                        <select class="form-control col-lg-12 col-sm-12" id="lb_empresa">
                             <option>Selecione...</option>
                         </select>
                         <br />
