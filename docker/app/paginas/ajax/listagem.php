@@ -14,8 +14,15 @@ function getArquivos() {
 	
 }
 
+function gerarPDF() {
+	
+}
+
+function baixarArquivo() {
+	
+}
 $funcs = array(
-    'getArquivos'
+    'getArquivos', 'gerarPDF', 'baixarArquivo'
 );
 if (in_array($_REQUEST['acao'], $funcs)) {
     call_user_func($_REQUEST['acao']);
