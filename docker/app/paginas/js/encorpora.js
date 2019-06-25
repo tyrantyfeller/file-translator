@@ -7,7 +7,14 @@ $( document ).ready(function() {
             if (retorno.erro) {
                 alert('erro ao logar');
             }
-            $("#btn-encorporar-empresa").append(retorno.html);
+            $("#lb_empresa").append(retorno.html);
+        }
+    });
+    $('#btn-encorporar').click(function () {
+        if ($('#lb_empresa').val() != '') {
+
+        } else {
+
         }
     });
 });

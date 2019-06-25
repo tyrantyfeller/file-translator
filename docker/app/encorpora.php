@@ -20,9 +20,6 @@
                         <a class="nav-link" href="configuracao.php">Configuração</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="listagem.php">Listagem</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="usuario.php">Usuário</a>
                     </li>
                 </ul>
@@ -38,10 +35,10 @@
                         <h1 class="display-4">Encorporar empresa</h1>
                         <br />
                         <select class="form-control col-lg-12 col-sm-12" id="lb_empresa">
-                            <option>Selecione...</option>
+                            <option value="">Selecione...</option>
                         </select>
                         <br />
-                        <button type="button" class="btn btn-success col-lg-2 col-sm-2">Encorporar</button>
+                        <button id="btn-encorporar" type="button" class="btn btn-success col-lg-2 col-sm-2">Encorporar</button>
                     </form>
                 </div>
             </div>
@@ -49,5 +46,6 @@
         <script src="externo/assets/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
         <script src="externo/assets/JQuery-3.4.1/jquery-3.4.1.min.js"></script>
         <script src="paginas/js/encorpora.js"></script>
+        <script src="paginas/js/global.js"></script>
     </body>
 </html>

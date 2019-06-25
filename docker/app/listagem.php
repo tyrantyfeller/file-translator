@@ -41,5 +41,6 @@
         <script src="externo/assets/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
         <script src="externo/assets/JQuery-3.4.1/jquery-3.4.1.min.js"></script>
         <script src="paginas/js/listagem.js"></script>
+        <script src="paginas/js/global.js"></script>
     </body>
 </html>
