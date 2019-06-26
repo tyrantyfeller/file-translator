@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once '../../externo/DAO/Usuario.php';
+require_once '../../externo/DAO/';
 require_once '../../externo/publicFunctions.php';
 
 $response = new stdClass();
@@ -10,16 +10,12 @@ $response->status = '';
 $response->msg = '';
 $response->data = null;
 
-function cadastraUsuario() {
+function consultaArquivo() {
     
 }
 
-function excluirUsuario() {
-	
-}
-
 $funcs = array(
-    'cadastraUsuario', 'excluirUsuario'
+    'consultaArquivo'
 );
 if (in_array($_REQUEST['acao'], $funcs)) {
     call_user_func($_REQUEST['acao']);
