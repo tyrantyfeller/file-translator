@@ -28,6 +28,5 @@ class CriadorTabela {
     }
 
     public function gerarTabela($colunas, $dados) {
-        
     }
 }
