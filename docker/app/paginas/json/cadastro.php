@@ -11,7 +11,6 @@ $response->msg = '';
 $response->data = null;
 
 function getEmpresas() {
-    
 }
 
 $funcs = array(
