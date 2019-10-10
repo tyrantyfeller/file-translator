@@ -42,7 +42,6 @@ class conexaoBanco {
         } else {
             $this->stSQL .= "*";
         }
-
         $this->stSQL .= " FROM {$this->stTable}";
 
         if ($where) {
